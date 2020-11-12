@@ -42,9 +42,9 @@
 
         // randomly create some nodes and edges
         var nodes = [
-          { id: 0, label: "Sites"},
-          { id: 1, label: "Natural"},
-          { id: 2, label: "Cultural"},
+          { id: 0, label: "World Heritage Sites"},
+          { id: 1, label: "Natural Sites"},
+          { id: 2, label: "Cultural Sites"},
           { id: 3, label: "War"},
           { id: 4, label: "Deforestation"},
           { id: 5, label: "Armed Violence/Groups"},
@@ -75,8 +75,39 @@
           { id: 30, label: "Hatra"},
           { id: 31, label: "Archaeological Site of Cyrene"},
           { id: 32, label: "Timbuktu"},
+          // for Ezgi's code
+          { id: 51, label: "East Rennell"},
+          { id: 52, label: "Selous Game Reserve"},
+          { id: 53, label: "Rainforests of the Atsinanana"},
+          { id: 54, label: "Mount Nimba Strict Nature Reserve"},
+          { id: 55, label: "Manovo-Gounda St. Floris National Park"},
+          { id: 56, label: "Salonga National Park"},
+          { id: 57, label: "Tropical Rainforest Heritage of Sumatra"},
+          { id: 58, label: "Islands and Protected Areas of the Gulf of California"},
+          { id: 59, label: "Air and Ténéré Natural Reserves"},
+          { id: 60, label: "Río Plátano Biosphere Reserve"},
+          { id: 61, label: "Virunga National Park"},
+          { id: 62, label: "Garamba National Park"},
+          { id: 63, label: "Everglades National Park"},
+          { id: 64, label: "Lake Turkana National Parks"},
+          { id: 65, label: "Okapi Wildlife Reserve"},
+          { id: 66, label: "Niokolo-Koba National Park"},
+          { id: 67 label: "Kahuzi-Biega National Park"}
         ];
-        
+        edges.push({ from: 0, to: 1 });
+        edges.push({ from: 0, to: 2 });
+        edges.push({ from: 1, to: 3 });
+        edges.push({ from: 1, to: 4 });
+        edges.push({ from: 1, to: 5 });
+        edges.push({ from: 1, to: 6 });
+        edges.push({ from: 1, to: 7 });
+        edges.push({ from: 1, to: 8 });
+        edges.push({ from: 2, to: 9 });
+        edges.push({ from: 2, to: 10 });
+        edges.push({ from: 2, to: 11 });
+        edges.push({ from: 2, to: 12 });
+        edges.push({ from: 2, to: 13 });
+        edges.push({ from: 2, to: 14 });
         edges.push({ from: 8, to: 15 });
         edges.push({ from: 3, to: 16 });
         edges.push({ from: 5, to: 16 });
@@ -101,7 +132,30 @@
         edges.push({ from: 3, to: 31 });
         edges.push({ from: 5, to: 31 });
         edges.push({ from: 7, to: 32 });
-       
+        // for Ezgi's code
+        edges.push({ from: 6, to: 51 });
+        edges.push({ from: 6, to: 52 });
+        edges.push({ from: 6, to: 53 });
+        edges.push({ from: 6, to: 54 });
+        edges.push({ from: 8, to: 55 });
+        edges.push({ from: 5, to: 56 });
+        edges.push({ from: 6, to: 57 });
+        edges.push({ from: 6, to: 58 });
+        edges.push({ from: 5, to: 59 });
+        edges.push({ from: 6, to: 59 });
+        edges.push({ from: 8, to: 59 });
+        edges.push({ from: 6, to: 60 });
+        edges.push({ from: 8, to: 60 });
+        edges.push({ from: 3, to: 61 });
+        edges.push({ from: 4, to: 61 });
+        edges.push({ from: 6, to: 62 });
+        edges.push({ from: 6, to: 63 });
+        edges.push({ from: 8, to: 63 });
+        edges.push({ from: 6, to: 64 });
+        edges.push({ from: 5, to: 65 });
+        edges.push({ from: 6, to: 66 });
+        edges.push({ from: 3, to: 67 });
+        edges.push({ from: 4, to: 67 });
         nodes[0]["level"] = 0;
         nodes[1]["level"] = 1;
         nodes[2]["level"] = 1;
@@ -123,6 +177,36 @@
         nodes[18]["level"] = 3;
         nodes[19]["level"] = 3;
         nodes[20]["level"] = 3;
+        nodes[21]["level"] = 3;
+        nodes[22]["level"] = 3;
+        nodes[23]["level"] = 3;
+        nodes[24]["level"] = 3;
+        nodes[25]["level"] = 3;
+        nodes[26]["level"] = 3;
+        nodes[27]["level"] = 3;
+        nodes[28]["level"] = 3;
+        nodes[29]["level"] = 3;
+        nodes[30]["level"] = 3;
+        nodes[31]["level"] = 3;
+        nodes[32]["level"] = 3;
+        // for Ezgi's code
+        nodes[51]["level"] = 3;
+        nodes[52]["level"] = 3;
+        nodes[53]["level"] = 3;
+        nodes[54]["level"] = 3;
+        nodes[55]["level"] = 3;
+        nodes[56]["level"] = 3;
+        nodes[57]["level"] = 3;
+        nodes[58]["level"] = 3;
+        nodes[59]["level"] = 3;
+        nodes[60]["level"] = 3;
+        nodes[61]["level"] = 3;
+        nodes[62]["level"] = 3;
+        nodes[63]["level"] = 3;
+        nodes[64]["level"] = 3;
+        nodes[65]["level"] = 3;
+        nodes[66]["level"] = 3;
+        nodes[67]["level"] = 3;
 
         // create a network
         var container = document.getElementById("mynetwork");
