@@ -42,27 +42,38 @@
 
         // randomly create some nodes and edges
         var nodes = [
-          { id: 0, label: "Sites"},
-          { id: 1, label: "Natural"},
-          { id: 2, label: "Cultural"},
-          { id: 3, label: "Sites"},
-          { id: 4, label: "Natural"},
-          { id: 5, label: "Cultural"},
-          { id: 6, label: "Sites"},
-          { id: 7, label: "Natural"},
-          { id: 8, label: "Cultural"},
-          { id: 9, label: "Sites"},
-          { id: 10, label: "Natural"},
-          { id: 11, label: "Sites"},
-          { id: 12, label: "Natural"},
-          { id: 13, label: "Cultural"},
-          { id: 14, label: "Sites"},
-          { id: 15, label: "Natural"},
-          { id: 16, label: "Cultural"},
-          { id: 17, label: "Sites"},
-          { id: 18, label: "Cultural"},
-          { id: 19, label: "Sites"},
-          { id: 20, label: "Natural"},
+          { id: 0, label: "World Heritage Sites"},
+          { id: 1, label: "Natural Sites"},
+          { id: 2, label: "Cultural Sites"},
+          { id: 3, label: "War"},
+          { id: 4, label: "Deforestation"},
+          { id: 5, label: "Armed Violence/Groups"},
+          { id: 6, label: "Environmental Factors/Changes"},
+          { id: 7, label: "Urban Destruction"},
+          { id: 8, label: "Deterioration"},
+          { id: 9, label: "War"},
+          { id: 10, label: "Deforestation"},
+          { id: 11, label: "Armed Violence/Groups"},
+          { id: 12, label: "Environmental Factors/Changes"},
+          { id: 13, label: "Urban Destruction"},
+          { id: 14, label: "Deterioration"},
+          { id: 51, label: "East Rennell"},
+          { id: 52, label: "Selous Game Reserve"},
+          { id: 53, label: "Rainforests of the Atsinanana"},
+          { id: 54, label: "Mount Nimba Strict Nature Reserve"},
+          { id: 55, label: "Manovo-Gounda St. Floris National Park"},
+          { id: 56, label: "Salonga National Park"},
+          { id: 57, label: "Tropical Rainforest Heritage of Sumatra"},
+          { id: 58, label: "Islands and Protected Areas of the Gulf of California"},
+          { id: 59, label: "Air and Ténéré Natural Reserves"},
+          { id: 60, label: "Río Plátano Biosphere Reserve"},
+          { id: 61, label: "Virunga National Park"},
+          { id: 62, label: "Garamba National Park"},
+          { id: 63, label: "Everglades National Park"},
+          { id: 64, label: "Lake Turkana National Parks"},
+          { id: 65, label: "Okapi Wildlife Reserve"},
+          { id: 66, label: "Niokolo-Koba National Park"},
+          { id: 67 label: "Kahuzi-Biega National Park"}
         ];
         edges.push({ from: 0, to: 1 });
         edges.push({ from: 0, to: 2 });
@@ -78,12 +89,29 @@
         edges.push({ from: 2, to: 12 });
         edges.push({ from: 2, to: 13 });
         edges.push({ from: 2, to: 14 });
-        edges.push({ from: 3, to: 15 });
-        edges.push({ from: 3, to: 16 });
-        edges.push({ from: 3, to: 17 });
-        edges.push({ from: 3, to: 18 });
-        edges.push({ from: 3, to: 19 });
-        edges.push({ from: 3, to: 20 });
+        edges.push({ from: 6, to: 51 });
+        edges.push({ from: 6, to: 52 });
+        edges.push({ from: 6, to: 53 });
+        edges.push({ from: 6, to: 54 });
+        edges.push({ from: 8, to: 55 });
+        edges.push({ from: 5, to: 56 });
+        edges.push({ from: 6, to: 57 });
+        edges.push({ from: 6, to: 58 });
+        edges.push({ from: 5, to: 59 });
+        edges.push({ from: 6, to: 59 });
+        edges.push({ from: 8, to: 59 });
+        edges.push({ from: 6, to: 60 });
+        edges.push({ from: 8, to: 60 });
+        edges.push({ from: 3, to: 61 });
+        edges.push({ from: 4, to: 61 });
+        edges.push({ from: 6, to: 62 });
+        edges.push({ from: 6, to: 63 });
+        edges.push({ from: 8, to: 63 });
+        edges.push({ from: 6, to: 64 });
+        edges.push({ from: 5, to: 65 });
+        edges.push({ from: 6, to: 66 });
+        edges.push({ from: 3, to: 67 });
+        edges.push({ from: 4, to: 67 });
         nodes[0]["level"] = 0;
         nodes[1]["level"] = 1;
         nodes[2]["level"] = 1;
@@ -99,12 +127,23 @@
         nodes[12]["level"] = 2;
         nodes[13]["level"] = 2;
         nodes[14]["level"] = 2;
-        nodes[15]["level"] = 3;
-        nodes[16]["level"] = 3;
-        nodes[17]["level"] = 3;
-        nodes[18]["level"] = 3;
-        nodes[19]["level"] = 3;
-        nodes[20]["level"] = 3;
+        nodes[51]["level"] = 3;
+        nodes[52]["level"] = 3;
+        nodes[53]["level"] = 3;
+        nodes[54]["level"] = 3;
+        nodes[55]["level"] = 3;
+        nodes[56]["level"] = 3;
+        nodes[57]["level"] = 3;
+        nodes[58]["level"] = 3;
+        nodes[59]["level"] = 3;
+        nodes[60]["level"] = 3;
+        nodes[61]["level"] = 3;
+        nodes[62]["level"] = 3;
+        nodes[63]["level"] = 3;
+        nodes[64]["level"] = 3;
+        nodes[65]["level"] = 3;
+        nodes[66]["level"] = 3;
+        nodes[67]["level"] = 3;
 
         // create a network
         var container = document.getElementById("mynetwork");
