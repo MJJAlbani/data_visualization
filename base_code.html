@@ -41,9 +41,48 @@
         var connectionCount = [];
 
         // randomly create some nodes and edges
-        for (var i = 0; i < 15; i++) {
-          nodes.push({ id: i, label: String(i) });
-        }
+        var nodes = [
+          { id: 0, label: "Sites"},
+          { id: 1, label: "Natural"},
+          { id: 2, label: "Cultural"},
+          { id: 3, label: "Sites"},
+          { id: 4, label: "Natural"},
+          { id: 5, label: "Cultural"},
+          { id: 6, label: "Sites"},
+          { id: 7, label: "Natural"},
+          { id: 8, label: "Cultural"},
+          { id: 9, label: "Sites"},
+          { id: 10, label: "Natural"},
+          { id: 11, label: "Sites"},
+          { id: 12, label: "Natural"},
+          { id: 13, label: "Cultural"},
+          { id: 14, label: "Sites"},
+          { id: 15, label: "Natural"},
+          { id: 16, label: "Cultural"},
+          { id: 17, label: "Sites"},
+          { id: 18, label: "Cultural"},
+          { id: 19, label: "Sites"},
+          { id: 20, label: "Natural"}   
+
+          { id: 33, label: "City of Potosi"},
+          { id: 34, label: "Historic Town of Zabīd"},
+          { id: 35, label: "Al-Khalil Old Town"},
+          { id: 36, label: "Crac des Chevaliers and Qal’at Salah El-Din"},
+          { id: 37, label: "Historic Centre of Vienna"},
+          { id: 38, label: "Archaeological Site of Sabratha"},
+          { id: 39, label: "Rock-Art Sites of Tadrart Acacus"},
+          { id: 40, label: "Historic Centre of Shakhrisyabz"},
+          { id: 41, label: "Ashur (Qal'at Sherqat)"},
+          { id: 42, label: "Old Towns of Djenné"},
+          { id: 43, label: "Old Walled City of Shibam"},
+          { id: 44, label: "Ancient City of Aleppo"},
+          { id: 45, label: "Ancient Villages of Northern Syria"},
+          { id: 46, label: "Abu Mena"},
+          { id: 47, label: "Coro and its Port"},
+          { id: 48, label: "Old City of Sana'a"},
+          { id: 49, label: "Palestine: Land of Olives and Vines"},
+          { id: 50, label: "Old Town of Ghadamés"},
+        ];
         edges.push({ from: 0, to: 1 });
         edges.push({ from: 0, to: 2 });
         edges.push({ from: 1, to: 3 });
@@ -58,6 +97,12 @@
         edges.push({ from: 2, to: 12 });
         edges.push({ from: 2, to: 13 });
         edges.push({ from: 2, to: 14 });
+        edges.push({ from: 3, to: 15 });
+        edges.push({ from: 3, to: 16 });
+        edges.push({ from: 3, to: 17 });
+        edges.push({ from: 3, to: 18 });
+        edges.push({ from: 3, to: 19 });
+        edges.push({ from: 3, to: 20 });
         nodes[0]["level"] = 0;
         nodes[1]["level"] = 1;
         nodes[2]["level"] = 1;
@@ -73,6 +118,30 @@
         nodes[12]["level"] = 2;
         nodes[13]["level"] = 2;
         nodes[14]["level"] = 2;
+        nodes[15]["level"] = 3;
+        nodes[16]["level"] = 3;
+        nodes[17]["level"] = 3;
+        nodes[18]["level"] = 3;
+        nodes[19]["level"] = 3;
+        nodes[20]["level"] = 3;
+        
+        nodes[33]["level"] = 2;
+        nodes[34]["level"] = 3;
+        nodes[35]["level"] = 3;
+        nodes[36]["level"] = 3;
+        nodes[37]["level"] = 3;
+        nodes[38]["level"] = 3;
+        nodes[39]["level"] = 3;
+        nodes[40]["level"] = 2;
+        nodes[41]["level"] = 3;
+        nodes[42]["level"] = 3;
+        nodes[43]["level"] = 3;
+        nodes[44]["level"] = 3;
+        nodes[45]["level"] = 3;
+        nodes[46]["level"] = 3;
+        nodes[47]["level"] = 2;
+        nodes[48]["level"] = 3;
+        nodes[50]["level"] = 3;
 
         // create a network
         var container = document.getElementById("mynetwork");
@@ -111,7 +180,7 @@
   </head>
 
   <body onload="draw();">
-    <h2>Hierarchical Layout - User-defined</h2>
+    <h2>Data Visualization</h2>
 
     <div style="width: 700px; font-size: 14px; text-align: justify">
       This example shows a user-defined hierarchical layout. If the user defines
