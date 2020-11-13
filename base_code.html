@@ -39,8 +39,6 @@
         nodes = [];
         edges = [];
         var connectionCount = [];
-
-        // randomly create some nodes and edges
         var nodes = [
           { id: 0, label: "World Heritage Sites"},
           { id: 1, label: "Natural Sites"},
@@ -109,7 +107,7 @@
           { id: 64, label: "Lake Turkana National Parks"},
           { id: 65, label: "Okapi Wildlife Reserve"},
           { id: 66, label: "Niokolo-Koba National Park"},
-          { id: 67 label: "Kahuzi-Biega National Park"}
+          { id: 67, label: "Kahuzi-Biega National Park"}
         ];
         edges.push({ from: 0, to: 1 });
         edges.push({ from: 0, to: 2 });
@@ -158,11 +156,11 @@
         edges.push({ from: 9, to: 38 });
         edges.push({ from: 11, to: 38 });
         edges.push({ from: 14, to: 38 });
-        edges.push({ from: 11, to: 39 });
         edges.push({ from: 9, to: 39 });
+        edges.push({ from: 11, to: 39 });
         edges.push({ from: 13, to: 40 });
-        edges.push({ from: 12, to: 41 });
         edges.push({ from: 9, to: 41 });
+        edges.push({ from: 12, to: 41 });
         edges.push({ from: 13, to: 42 });
         edges.push({ from: 14, to: 42 });
         edges.push({ from: 11, to: 43 });
@@ -175,9 +173,9 @@
         edges.push({ from: 9, to: 48 });
         edges.push({ from: 11, to: 49 });
         edges.push({ from: 12, to: 49 });
-        edges.push({ from: 13, to: 50 });
         edges.push({ from: 9, to: 50 });
         edges.push({ from: 11, to: 50 });
+        edges.push({ from: 13, to: 50 });
         edges.push({ from: 6, to: 51 });
         edges.push({ from: 6, to: 52 });
         edges.push({ from: 6, to: 53 });
@@ -250,6 +248,7 @@
         nodes[46]["level"] = 3;
         nodes[47]["level"] = 3;
         nodes[48]["level"] = 3;
+        nodes[49]["level"] = 3;
         nodes[50]["level"] = 3;
         nodes[51]["level"] = 3;
         nodes[52]["level"] = 3;
@@ -306,7 +305,7 @@
   </head>
 
   <body onload="draw();">
-    <h2>Data Visualization</h2>
+    <h2>Data Visualization Challenge</h2>
 
     <div style="width: 700px; font-size: 14px; text-align: justify">
       This example shows a user-defined hierarchical layout. If the user defines
